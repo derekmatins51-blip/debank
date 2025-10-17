@@ -16,12 +16,20 @@
         "alpinejs": "^3.7.0",
         "autoprefixer": "^10.0.2",
         "axios": "^0.21.4",
+        "browserify-zlib": "^0.2.0",
+        "buffer": "^6.0.3",
+        "crypto-browserify": "^3.12.1",
+        "fs-extra": "^11.3.2",
+        "https-browserify": "^1.0.0",
         "laravel-echo": "^1.11.3",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
+        "path-browserify": "^1.0.1",
         "postcss": "^8.1.14",
         "postcss-import": "^12.0.1",
         "pusher-js": "^7.0.3",
+        "stream-browserify": "^3.0.0",
+        "stream-http": "^3.2.0",
         "tailwindcss": "^2.0.1"
     }
 }
