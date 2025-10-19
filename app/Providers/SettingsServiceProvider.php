@@ -26,20 +26,20 @@ class SettingsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //$settings = Settings::where('id', '1')->first();
-        //$paystack = Paystack::where('id', '1')->first();
-        //$settings2 = SettingsCont::find(1);
+        $settings = Settings::where('id', '1')->first();
+        $paystack = Paystack::where('id', '1')->first();
+        $settings2 = SettingsCont::find(1);
 
 
         //if ($settings->install_type == 'Sub-Folder') {
         //    $urls = explode('/', $settings->site_address);
         //    $assetUrl = '/' . end($urls);
         //} else {
-        //    $assetUrl = null;
-        }
+            $assetUrl = null;
+        //}
 
         // Set configuration values at run time
-        //config([
+        config([
         //    'captcha.secret' => $settings->capt_secret,
         //    'captcha.sitekey' => $settings->capt_sitekey,
         //    'services.google.client_id' =>  $settings->google_id,
@@ -65,6 +65,6 @@ class SettingsServiceProvider extends ServiceProvider
         //    'flutterwave.secretKey' => $settings2->flw_secret_key,
         //    'flutterwave.secretHash' => $settings2->flw_secret_hash,
         //    'services.telegram-bot-api.token' =>  $settings2->telegram_bot_api,
-        //]);
-    //}
+        ]);
+    }
 }

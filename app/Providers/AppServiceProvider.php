@@ -32,20 +32,20 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-       // FacadesStorage::extend('sftp', function ($app, $config) {
-        //    return new Filesystem(new SftpAdapter($config));
-        //});
+        FacadesStorage::extend('sftp', function ($app, $config) {
+            return new Filesystem(new SftpAdapter($config));
+        });
 
-        //Paginator::useBootstrap();
+        Paginator::useBootstrap();
 
         // Sharing settings with all view
-        //$settings = Settings::where('id', '1')->first();
-        //$terms =  TermsPrivacy::find(1);
-        //$moreset =  SettingsCont::find(1);
+        $settings = Settings::where('id', '1')->first();
+        $terms =  TermsPrivacy::find(1);
+        $moreset =  SettingsCont::find(1);
 
-        //View::share('settings', $settings);
-        //View::share('terms', $terms);
-        //View::share('moresettings', $moreset);
+        View::share('settings', $settings);
+        View::share('terms', $terms);
+        View::share('moresettings', $moreset);
         //View::share('mod', $settings->modules);
     }
 }
