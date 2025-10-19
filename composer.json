@@ -14,6 +14,7 @@
         "bitpay/sdk": "^5.0",
         "botman/botman": "^2.7",
         "botman/driver-telegram": "^2.0",
+        "doctrine/dbal": "3.8",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
