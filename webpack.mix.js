@@ -45,7 +45,9 @@ mix.webpackConfig({
  |
  */
 
-mix.js("resources/js/app.js", "public/js");
+mix.js("resources/js/app.js", "public/js")
+   .css('resources/css/app.css', 'public/css')
+   .version();
 
 if (mix.inProduction()) {
     mix.version();
